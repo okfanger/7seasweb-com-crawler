@@ -1,0 +1,9 @@
+bin/chromedriver.exe
+env/
+venv/
+tmp/
+media/
+
+.idea/
+*.log
+db.sqlite3
