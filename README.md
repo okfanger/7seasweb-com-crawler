@@ -1,4 +1,4 @@
-# CnkiAbstarctCrawler
+# 7seasweb-com-crawler
 
 ## 部署方式
 
