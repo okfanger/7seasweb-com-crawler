@@ -21,13 +21,12 @@ https://npmmirror.com/mirrors/chromedriver/
 python -m venv env
 ```
 
-## 激活虚拟环境
-
+## 安装依赖：
 ```bash
-.\env\Scripts\activate
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-## 安装Microsoft C++ Build Tools (万一用不了再进行这一步)
+## 安装Microsoft C++ Build Tools (万一用不了再回头来进行这一步)
 https://my.visualstudio.com/
 
 首先登录，接下来，在下载页面搜索build tools，找到左侧的Visual Studio 2015 update 3。
@@ -36,10 +35,20 @@ https://my.visualstudio.com/
 安装后，即可正常使用pip进行对应包的安装。
 
 
-安装依赖：
+## 激活虚拟环境
+
 ```bash
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+.\env\Scripts\activate
 ```
+
+## 运行项目
+
+如果能用 pycharm的运行更好（不会显示chromedriver的日志）
+
+```bash
+python main.py
+```
+
 
 
 
