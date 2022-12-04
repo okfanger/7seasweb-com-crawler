@@ -1,25 +1,17 @@
 import json
-import threading
-import base64
 import os
 import random
-import re
+import sqlite3
 import threading
 import time
-from io import BytesIO
-from logging import exception
 
 import brotli
 import requests
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from seleniumwire.request import Response
 from seleniumwire.webdriver import Chrome
-from tqdm import tqdm
-from browsermobproxy import Server, Client
-import sqlite3
 
 insert_keys = ['id', 'contractAddress', 'creator', 'description', 'assetImageUrl', 'name', 'tokenId', 'tokenStandard', 'isCollect', 'collectCount', 'clickCount', 'nftPrice', 'owner', 'status', 'createTime', 'startTime', 'endTime', 'metadata', 'chainConfigName', 'coinConfigName', 'assetTypeId', 'createUserNickName', 'createUserImgLogo', 'ownerUserNickName', 'ownerUserImgLogo', 'auctionNumber', 'categoryId']
 integer_keys = ['isCollect', 'collectCount', 'clickCount', 'nftPrice', 'status', 'createTime', 'startTime', 'endTime','assetTypeId', 'auctionNumber', 'categoryId']

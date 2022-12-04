@@ -1,10 +1,7 @@
-import base64
 import os
 import random
-import re
 import threading
 import time
-from io import BytesIO
 from logging import exception
 
 import requests
